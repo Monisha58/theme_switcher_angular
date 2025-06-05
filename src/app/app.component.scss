@@ -1,0 +1,45 @@
+.light {
+    --background-color: #fff;
+    --header-color: #000;
+    --paragraph-color: #000;
+}
+
+.light-contrast {
+    --background-color: #fff;
+    --header-color: red;
+    --paragraph-color: blue;
+}
+
+.dark {
+    --background-color: #000;
+    --header-color: #fff;
+    --paragraph-color: #fff;
+}
+
+.dark-contrast {
+    --background-color: #000;
+    --header-color: red;
+    --paragraph-color: blue;
+}
+
+body {
+    background-color: var(--background-color);
+    h1 {
+        color: var(--header-color);
+    }
+    p {
+        color: var(--paragraph-color);
+    }
+    select {
+        color: var(--paragraph-color) !important;
+        option {
+            color: var(--paragraph-color) !important;
+        }
+    }
+}
+
+.form-control {
+    &:focus {
+        box-shadow: none;
+    }
+}
